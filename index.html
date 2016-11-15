@@ -97,7 +97,9 @@
               var thumbUrl = 'https://placehold.it/800x600/000000/ffffff?text=Missing%20thumb'
             }
             box.append('h6').text(i['Surname Name']);
-            box.append('img').attr('src',thumbUrl).attr('class','sketch-thumb img-responsive')
+            // box.append('img').attr('src',thumbUrl).attr('class','sketch-thumb img-responsive')
+
+            box.append('div').attr('class','sketch-thumb').style('background-image','url('+thumbUrl+')')
             
             // On Click
             box.on("click", function(){
